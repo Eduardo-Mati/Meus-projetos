@@ -4,7 +4,7 @@ import com.sun.jdi.Value;
 
 import java.util.*;
 
-public class bibliotecaComHashMap {
+public class ADSaula {
     public static void main(String[] args) {
         HashMap<String, ArrayList<String>> livros = new HashMap<>();
         int opcaoUsuario;
@@ -155,21 +155,24 @@ public class bibliotecaComHashMap {
             }
 
         }
-            if(!encontrado){
-                System.out.println("Livro não encontrado...");
-            }
-
-
+        if(!encontrado){
+            System.out.println("Livro não encontrado...");
         }
 
+
+    }
+
     public static void lista(HashMap<String, ArrayList<String>> bibliotecaAdd, Scanner scan){
+
+
         for(Map.Entry<String, ArrayList<String>> listona : bibliotecaAdd.entrySet()){
+
             ArrayList<String> lista = listona.getValue();
             String autor = listona.getKey();
 
-            for (int i = 0; i<lista.size();i++){
-                System.out.println(autor+lista);
-            }
+            System.out.println("Autor: " + autor);
+            System.out.println("Livros: " + lista);
+            System.out.println("----------------------");
         }
     }
 }
