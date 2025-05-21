@@ -4,7 +4,7 @@ import com.sun.jdi.Value;
 
 import java.util.*;
 
-public class ADSaula {
+public class bibliotecaComHashMap {
     public static void main(String[] args) {
         HashMap<String, ArrayList<String>> livros = new HashMap<>();
         int opcaoUsuario;
